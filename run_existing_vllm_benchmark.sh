@@ -87,7 +87,7 @@ run_stage_nocot() {
 echo "服务: http://$HOST:$PORT | model=$MODEL_NAME | spec_steps=$SPEC_STEPS"
 echo "数据集: ${#FINAL_ANSWER_DATASETS[@]} 个 final_answer + ${#TOOL_CALL_DATASETS[@]} 个 tool_call"
 echo "结果目录: $RESULT_DIR"
-run_stage_nocot final_answer "${FINAL_ANSWER_NOCOT_DATASETS[@]}"
+# run_stage_nocot final_answer "${FINAL_ANSWER_NOCOT_DATASETS[@]}"
 # run_stage_nocot tool_call "${TOOL_CALL_NOCOT_DATASETS[@]}"
 run_stage final_answer "${FINAL_ANSWER_DATASETS[@]}"
 # run_stage tool_call "${TOOL_CALL_DATASETS[@]}"
